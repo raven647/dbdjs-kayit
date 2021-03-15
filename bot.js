@@ -58,6 +58,8 @@ kayıtkanal:"",
 erkek:"",
 kız:"",
 kayıtlıüye:"0",
+kayıtlıerkek:"0",
+kayıtlıkız:"0",
 otorol:"",
 kayıtsayısı:"0"
   })
