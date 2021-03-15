@@ -32,7 +32,7 @@ $thumbnail[$authorAvatar]
 $color[303136]
 $giveRoles[$authorID;$getServerVar[otorol]]
 $suppressErrors[Sunucuya $username katıldı ancak otorol ayarlanmamış, Lütfen otorolü ayarlayın.]
-    $onlyIf[$getServerVar[kayıtsistemi]==açık;]
+$onlyIf[$getServerVar[kayıtsistemi]==açık;]
   `
 })
 bot.onJoined()

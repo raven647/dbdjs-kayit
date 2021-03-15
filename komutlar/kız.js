@@ -25,7 +25,6 @@ module.exports = {
   $setUserVar[kayıtsayısı;$sum[$getUserVar[kayıtsayısı];1];$authorID]
   $changeNickName[$mentioned[1];$getServerVar[tag] $noMentionMessage[1] $getServerVar[ayraç] $noMentionMessage[2]]
   $giveRoles[$mentioned[1];$getServerVar[kız]]
-  $takeRole[$mentioned[1];$getServerVar[otorol]]
   $onlyForChannels[$getServerVar[kayıtkanal];Burası Kayıt Etme Kanalı Değil]
   $onlyIf[$hasRole[$authorID;$getServerVar[kayıtyetkilisi]]!=false;Bu komutu kullanmak için **$roleName[$getServerVar[kayıtyetkilisi]]** rolüne sahip olman gerekiyor]
     $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
