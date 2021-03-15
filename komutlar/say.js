@@ -15,7 +15,7 @@ module.exports = ({
   <#$getServerVar[kayıtyapıldıkanal]>
   
   **Kayıt Kanalı**
-  <#$getServerVar[kayıtkanal>
+  <#$getServerVar[kayıtkanal]>
   
   **Tag**
   $getServerVar[tag]
