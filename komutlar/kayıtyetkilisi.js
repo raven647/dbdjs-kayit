@@ -13,6 +13,7 @@ module.exports = ({
   $addTimeStamp
   $color[303136]
   $onlyPerms[admin;Bu Rolü Kaydetmek İçin **Yönetici** Yetkisine Sahip Olmanız Gerekmektedir.]
+  $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
   $deletecommand
   $deleteIn[10s]`
 })

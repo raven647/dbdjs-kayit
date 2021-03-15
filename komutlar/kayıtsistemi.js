@@ -12,7 +12,8 @@ module.exports = ({
   $color[303136]
   $onlyPerms[admin;Bu Sistemi Açmak İçin **Yönetici** Yetkisine Sahip Olmanız Gerekmektedir.]
   $deletecommand
-  $deleteIn[10s]`
+  $deleteIn[10s]
+  $onlyIf[$getServerVar[kayıtsistemi]==kapalı;Kayıt Sistemi zaten **açık**]`
 })
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.
