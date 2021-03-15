@@ -37,6 +37,11 @@ $suppressErrors[Sunucuya $username katıldı ancak otorol ayarlanmamış, Lütfe
 })
 bot.onJoined()
 
+bot.command({
+name: "eval",
+code: `$eval[$message]
+$onlyForIDs[539843855567028227; Geliştiricim Değilsin]`
+})
 
 bot.command({
   name: "prefix",

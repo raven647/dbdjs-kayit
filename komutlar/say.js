@@ -24,10 +24,10 @@ module.exports = ({
   $getServerVar[ayraç]
   
   **Erkek Rolü**
-  <@$getServerVar[erkek]>
+  $getServerVar[erkek]
   
     **Kız Rolü**
-  <@$getServerVar[kız]>
+  $getServerVar[kız]
   
   **Otorol**
   <@$getServerVar[otorol]>

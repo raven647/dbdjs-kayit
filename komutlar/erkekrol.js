@@ -1,7 +1,7 @@
 module.exports = {
   name: "erkekrol",
   aliases: ['erkek-rol'],
-  code: `$setServerVar[erkek;$message[1]]
+  code: `$setServerVar[erkek;$mentionedRoles[1]]
   $argsCheck[>1;Lütfen bir rol belirleyin. Örneğin: *$getServerVar[prefix]erkekrol @rol** ]
   $title[Rol Kaydedildi]
   $description[Erkek Rolü Başarıyla **$mentionedRoles[1]** olarak kaydedildi.
