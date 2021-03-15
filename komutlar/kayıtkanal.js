@@ -1,7 +1,7 @@
-module.exports = ({
-  name:"kayıtkanal",
-  aliases:['kayıt-kanal'],
-  code:`$setServerVar[kayıtkanal;$mentionedChannels[1]]
+module.exports = {
+  name: "kayıtkanal",
+  aliases: ["kayıt-kanal"],
+  code: `$setServerVar[kayıtkanal;$mentionedChannels[1]]
   $argsCheck[>1;Lütfen bir kanal etiketleyin. Örneğin: *$getServerVar[prefix]kayıtkanal #kayıt-kanalı*]
   $title[Kanal Kaydedildi]
   $description[Kayıt Kanalı Başarıyla <#$mentionedChannels[1]> olarak kaydedildi.
@@ -16,6 +16,6 @@ module.exports = ({
   $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
   $deletecommand
   $deleteIn[10s]`
-})
+};
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.

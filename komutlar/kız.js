@@ -1,8 +1,9 @@
 module.exports = {
-  name: "e",
-  aliases: ['erkek'],
-  code: ` $suppressErrors[Kayıt edilemedi, kayıt rolleri ve kanalları tam olarak doğru ayarlanmamış olabilir]
-  $channelSendMessage[$setServerVar[kayıtyapıldıkanal];<@$mentioned[1]>{title:Kayıt Yapıldı!}{description:<@$mentioned[1]> aramıza <@$getServerVar[erkek]> rolü ile katıldı.
+  name: "k",
+  aliases: ['kız'],
+  code: `
+  $suppressErrors[Kayıt edilemedi, kayıt rolleri ve kanalları tam olarak doğru ayarlanmamış olabilir]
+  $channelSendMessage[$setServerVar[kayıtyapıldıkanal];<@$mentioned[1]>{title:Kayıt Yapıldı!}{description:<@$mentioned[1]> aramıza <@$getServerVar[kız]> rolü ile katıldı.
   
   Kaydı Gerçekleştiren yetkili: <@$authorID> 
   
@@ -11,7 +12,7 @@ module.exports = {
   $description[**Kayıt Bilgileri**
   
   **Kayıt Edilen Kullanıcı : <@$mentioned[1]>**
-  **Verilen Rol : <@$getServerVar[erkek]>**
+  **Verilen Rol : <@$getServerVar[kız]>**
   **Yeni İsim : $getServerVar[tag] $noMentionMessage[1] $getServerVar[ayraç] $noMentionMessage[2]**
   **Kayıt eden Yetkli : <@$authorID>**
   **Yetkilinin Kayıt Sayısı : $sum[$getUserVar[kayıtsayısı];1]**
@@ -20,10 +21,10 @@ module.exports = {
   $color[303136]
   $thumbnail[$userAvatar[$mentioned[1]]]
   $setServerVar[kayıtlıüye;$sum[$getServerVar[kayıtlıüye];1]]
-  $setServerVar[kayıtlıerkek;$sum[$getServerVar[kayıtlıerkek];1]]
+  $setServerVar[kayıtlıkız;$sum[$getServerVar[kayıtlıkız];1]]
   $setUserVar[kayıtsayısı;$sum[$getUserVar[kayıtsayısı];1];$authorID]
   $changeNickName[$mentioned[1];$getServerVar[tag] $noMentionMessage[1] $getServerVar[ayraç] $noMentionMessage[2]]
-  $giveRoles[$mentioned[1];$getServerVar[erkek]]
+  $giveRoles[$mentioned[1];$getServerVar[kız]]
   $takeRole[$mentioned[1];$getServerVar[otorol]]
   $onlyForChannels[$getServerVar[kayıtkanal];Burası Kayıt Etme Kanalı Değil]
   $onlyIf[$hasRole[$authorID;$getServerVar[kayıtyetkilisi]]!=false;Bu komutu kullanmak için **$roleName[$getServerVar[kayıtyetkilisi]]** rolüne sahip olman gerekiyor]

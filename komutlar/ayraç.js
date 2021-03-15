@@ -1,7 +1,7 @@
-module.exports = ({
-  name:"ayraç",
-  aliases:['ayraç-ayarla','ayraçayarla'],
-  code:`$setServerVar[ayraç;$message[1]]
+module.exports = {
+  name: "ayraç",
+  aliases: ["ayraç-ayarla", "ayraçayarla"],
+  code: `$setServerVar[ayraç;$message[1]]
   $argsCheck[>1;Lütfen bir ayraç belirleyin. Örneğin: *$getServerVar[prefix]ayraç -**. Eğer belirlemezsen ayraç otomatik olarak **|** olarak kaydedilecek.]
   $title[Ayraç Kaydedildi]
   $description[Ayraç Başarıyla **$message[1]** olarak kaydedildi.
@@ -16,6 +16,6 @@ module.exports = ({
   $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
   $deletecommand
   $deleteIn[10s]`
-})
+};
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.

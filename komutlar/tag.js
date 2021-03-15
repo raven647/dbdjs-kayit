@@ -1,7 +1,7 @@
-module.exports = ({
-  name:"tag",
-  aliases:['tag-ayarla','tagayarla'],
-  code:`$setServerVar[tag;$message[1]]
+module.exports = {
+  name: "tag",
+  aliases: ["tag-ayarla", "tagayarla"],
+  code: `$setServerVar[tag;$message[1]]
   $argsCheck[>1;Lütfen bir tag belirleyin. Örneğin: *$getServerVar[prefix]tag ^** ]
   $title[Tag Kaydedildi]
   $description[Tag Başarıyla **$message[1]** olarak kaydedildi.
@@ -16,6 +16,6 @@ module.exports = ({
   $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
   $deletecommand
   $deleteIn[10s]`
-})
+};
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.

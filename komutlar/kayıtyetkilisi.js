@@ -1,7 +1,7 @@
-module.exports = ({
-  name:"kayıtyetkili",
-  aliases:['kayıt-yetkili'],
-  code:`$setServerVar[kayıtyetkilisi;$mentionedRoles[1]]
+module.exports = {
+  name: "kayıtyetkili",
+  aliases: ["kayıt-yetkili"],
+  code: `$setServerVar[kayıtyetkilisi;$mentionedRoles[1]]
   $argsCheck[>1;Lütfen bir rol etiketleyin. Örneğin: *$getServerVar[prefix]kayıtyetkili @kayıt yetkilisi*]
   $title[Rol Kaydedildi]
   $description[Kayıt Yetkilisi Rolü Başarıyla **$roleName[$mentionedRoles[1]]** olarak kaydedildi.
@@ -16,6 +16,6 @@ module.exports = ({
   $onlyIf[$getServerVar[kayıtsistemi]==açık;Bu komutu kullanmak için kayıt sistemini açmanız gerekiyor. Açmak için **$getServerVar[prefix]kayıtsistemi aç** yazmalısınız.]
   $deletecommand
   $deleteIn[10s]`
-})
+};
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.

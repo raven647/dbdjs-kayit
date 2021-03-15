@@ -1,7 +1,7 @@
-module.exports = ({
-  name:"kayıtsistemi aç",
-  aliases:['kayıt-sistemi aç'],
-  code:`$setServerVar[kayıtsistemi;açık]
+module.exports = {
+  name: "kayıtsistemi aç",
+  aliases: ["kayıt-sistemi aç"],
+  code: `$setServerVar[kayıtsistemi;açık]
   $title[Kayıt Sistemi Açıldı]
   $description[Kayıt sistemi başarıyla açıldı. Sistemi kurmak için $getServerVar[prefix]yardım yazın ve komutlarıma bakın.
   
@@ -14,6 +14,6 @@ module.exports = ({
   $deletecommand
   $deleteIn[10s]
   $onlyIf[$getServerVar[kayıtsistemi]==kapalı;Kayıt Sistemi zaten **açık**]`
-})
+};
 
 //Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.
