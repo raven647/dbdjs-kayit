@@ -50,7 +50,8 @@ $setServerVar[prefix;$message[1]]
 $argsCheck[<1;Lütfen bir önek söyleyin. Örneğin **$getServerVar[prefix]prefix !!**]
 Prefix Başarıyla Ayarlandı. Yeni Prefix $message[1] 
 $onlyPerms[admin;Bu Komutu Kullanabilmek İçin **Yönetici** Yetkisine sahip olman gerekiyor]
-$suppressErrors[Hata, Prefixi Kaydedemedim.]`
+$suppressErrors[Hata, Prefixi Kaydedemedim.]
+$argsCheck[>1;Lütfen prefix yaz]`
 });
 
 //BOT DURUMU
