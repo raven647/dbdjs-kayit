@@ -2,7 +2,7 @@ const dbd = require("dbd.js")
 var fs = require('fs');
 const bot = new dbd.Bot({
 token: process.env.token,
-prefix: ".",
+prefix: "$getServerVar[prefix]",
 mobile: true,
 fetchInvites: true
 })
@@ -18,6 +18,17 @@ for(const file of reader) {
     code: command.code
   });
 } 
+
+//BOT KOMUTLARI
+bot.command ({
+name: "prefix",
+code:`
+$setServerVar[prefix;$message[1]]
+$argsCheck[<1;Lütfen bir önek söyleyin. Örneğin **$getServerVar[prefix]prefix !!**]
+Prefix Başarıyla Ayarlandı. Yeni Prefix $message[1] 
+$onlyPerms[admin;Bu Komutu Kullanabilmek İçin **Yönetici** Yetkisine sahip olman gerekiyor]
+$suppressErrors[Hata, Prefixi Kaydedemedim.]`
+})
 
 //BOT DURUMU
 bot.status({
@@ -38,6 +49,7 @@ bot.status({
 
 bot.variables({
 kayıtsistemi:"kapalı",
+prefix:".",
 kayıtyetkilisi:"",
 kayıtyapıldıkanal:"",
 tag:"",
@@ -45,6 +57,7 @@ ayraç:"|",
 kayıtkanal:"",
 erkek:"",
 kız:"",
+kayıtlıüye:"0",
 otorol:"",
 kayıtsayısı:"0"
   })
