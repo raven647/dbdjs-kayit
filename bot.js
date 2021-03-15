@@ -20,6 +20,24 @@ for (const file of reader) {
 }
 
 //BOT KOMUTLARI
+
+bot.joinCommand({
+channel:"$getServerVar[kayıtkanal]",
+code:`
+$title[Sunucuya Biri Katıldı]
+$description[Sunucuya Hoşgeldin $username!
+\`\`\`     \`\`\`
+Lütfen İsim ve yaşını yazarak Yetkililerin Seni Kaydetmesini Bekle]
+$thumbnail[$authorAvatar]
+$color[303136]
+$giveRoles[$authorID;$getServerVar[otorol]]
+$suppressErrors[Sunucuya $username katıldı ancak otorol ayarlanmamış, Lütfen otorolü ayarlayın.]
+    $onlyIf[$getServerVar[kayıtsistemi]==açık;]
+  `
+})
+bot.onJoined()
+
+
 bot.command({
   name: "prefix",
   code: `
