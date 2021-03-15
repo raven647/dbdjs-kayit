@@ -1,0 +1,18 @@
+module.exports = ({
+  name:"kayıtsistemi aç",
+  aliases:['kayıt-sistemi aç'],
+  code:`$setServerVar[kayıtsistemi;açık]
+  $title[Kayıt Sistemi Açıldı]
+  $description[Kayıt sistemi başarıyla açıldı. Sistemi kurmak için $getServerVar[prefix]yardım yazın ve komutlarıma bakın.
+  
+  
+  Kaydeden Yetkili : $username[$authorID]]
+  $footer[$username;$authorAvatar]
+  $addTimeStamp
+  $color[303136]
+  $onlyPerms[admin;Bu Sistemi Açmak İçin **Yönetici** Yetkisine Sahip Olmanız Gerekmektedir.]
+  $deletecommand
+  $deleteIn[10s]`
+})
+
+//Bu komutu tamamen Falsis Kremlin Yazmıştır. Çalınması Kesinlikle Yasaktır.
