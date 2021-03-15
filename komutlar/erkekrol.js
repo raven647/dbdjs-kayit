@@ -8,7 +8,7 @@ module.exports = {
   
   Rolü Değiştirmek için aynı komutu yeni rol için uygulayın.
   Kaydeden Yetkili : $username[$authorID]
-  Rol : $mentionedRoles[1]]
+  Rol : <@&$mentionedRoles[1]>]
   $footer[$username;$authorAvatar]
   $addTimeStamp
   $color[303136]

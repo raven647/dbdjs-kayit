@@ -9,7 +9,7 @@ module.exports = ({
   $replaceText[$replaceText[$getServerVar[kayıtsistemi];kapalı;Sistem Kapalı;-1];açık;Sistem Açık;-1]
   
   **Kayıt Yetkilisi**
-  <@$getServerVar[kayıtyetkilisi]>
+  <@&$getServerVar[kayıtyetkilisi]>
   
   **Kayıt Yapıldıktan Sonra Mesajın Gönderildiği Kanal**
   <#$getServerVar[kayıtyapıldıkanal]>
@@ -24,13 +24,13 @@ module.exports = ({
   $getServerVar[ayraç]
   
   **Erkek Rolü**
-  $getServerVar[erkek]
+  <@&$getServerVar[erkek]>
   
     **Kız Rolü**
-  $getServerVar[kız]
+  <@&$getServerVar[kız]>
   
   **Otorol**
-  <@$getServerVar[otorol]>
+  <@&$getServerVar[otorol]>
   
   **Toplam kaydedilmiş üye**
   $getServerVar[kayıtlıüye]

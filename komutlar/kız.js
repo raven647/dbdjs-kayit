@@ -3,7 +3,7 @@ module.exports = {
   aliases: ['kız'],
   code: `
   $suppressErrors[Kayıt edilemedi, kayıt rolleri ve kanalları tam olarak doğru ayarlanmamış olabilir]
-  $channelSendMessage[$setServerVar[kayıtyapıldıkanal];<@$mentioned[1]>{title:Kayıt Yapıldı!}{description:<@$mentioned[1]> aramıza <@$getServerVar[kız]> rolü ile katıldı.
+  $channelSendMessage[$getServerVar[kayıtyapıldıkanal];<@$mentioned[1]>{title:Kayıt Yapıldı!}{description:<@$mentioned[1]> aramıza <@&$getServerVar[kız]> rolü ile katıldı.
   
   Kaydı Gerçekleştiren yetkili: <@$authorID> 
   
@@ -12,7 +12,7 @@ module.exports = {
   $description[**Kayıt Bilgileri**
   
   **Kayıt Edilen Kullanıcı : <@$mentioned[1]>**
-  **Verilen Rol : <@$getServerVar[kız]>**
+  **Verilen Rol : <@&$getServerVar[kız]>**
   **Yeni İsim : $getServerVar[tag] $noMentionMessage[1] $getServerVar[ayraç] $noMentionMessage[2]**
   **Kayıt eden Yetkli : <@$authorID>**
   **Yetkilinin Kayıt Sayısı : $sum[$getUserVar[kayıtsayısı];1]**
