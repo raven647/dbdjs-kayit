@@ -1,5 +1,5 @@
 module.exports = {
-  name: "kayıtsistemi kapat",
+  name: "kayıtsistemi-kapat",
   aliases: ["kayıt-sistemi kapat"],
   code: `$setServerVar[kayıtsistemi;kapalı]
   $title[Kayıt Sistemi Kapatıldı]

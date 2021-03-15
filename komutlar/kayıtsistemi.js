@@ -1,5 +1,5 @@
 module.exports = {
-  name: "kayıtsistemi aç",
+  name: "kayıtsistemi-aç",
   aliases: ["kayıt-sistemi aç"],
   code: `$setServerVar[kayıtsistemi;açık]
   $title[Kayıt Sistemi Açıldı]

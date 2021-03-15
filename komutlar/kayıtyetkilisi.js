@@ -1,6 +1,6 @@
 module.exports = {
-  name: "kayıtyetkili",
-  aliases: ["kayıt-yetkili"],
+  name: "kayıtyetkilisi",
+  aliases: ["kayıt-yetkilisi"],
   code: `$setServerVar[kayıtyetkilisi;$mentionedRoles[1]]
   $argsCheck[>1;Lütfen bir rol etiketleyin. Örneğin: *$getServerVar[prefix]kayıtyetkili @kayıt yetkilisi*]
   $title[Rol Kaydedildi]
