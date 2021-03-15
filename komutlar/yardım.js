@@ -38,6 +38,9 @@ module.exports = ({
   - Birisini kayıt etmek için kullanılır (erkek)
   
         **$getServerVar[prefix]k @kişi \`isim\` \`yaş\`**
-  - Birisini kayıt etmek için kullanılır (kız)]
+  - Birisini kayıt etmek için kullanılır (kız)
+  
+  **$getServerVar[prefix]kayıtsay @kişi/veya etiketlemenize gerek yok**
+  - Kişinin kaydettiği kullanıcı sayısını gösterir]
   $color[303136]`
 })
