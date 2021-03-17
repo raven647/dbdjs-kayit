@@ -26,6 +26,13 @@ channel:"$getServerVar[kayıtkanal]",
 code:`
 $title[Sunucuya Biri Katıldı]
 $description[Sunucuya Hoşgeldin $username!
+$if[$sub[$datestamp;$creationdate[$mentioned[1;yes];ms]]<$multi[$multi[$multi[$multi[30;24];60];60];1000]]
+Kullanıcı Riskli
+Hesap $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$mentioned[1;yes];time];years;yıl;-1];month;ay;-1];weeks;hafta;-1];days;gün;-1];hours;saat;-1];minutes;dakika;-1];seconds;saniye;-1] Önce Kurulmuş
+$else
+Kullanıcı Güvenli
+Hesap $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$creationDate[$mentioned[1;yes];time];years;yıl;-1];month;ay;-1];weeks;hafta;-1];days;gün;-1];hours;saat;-1];minutes;dakika;-1];seconds;saniye;-1] Önce Kurulmuş
+$endif
 \`\`\`     \`\`\`
 Lütfen İsim ve yaşını yazarak Yetkililerin Seni Kaydetmesini Bekle]
 $thumbnail[$authorAvatar]
